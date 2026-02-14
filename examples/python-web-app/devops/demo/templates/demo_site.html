@@ -1,97 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Template</title>
+<title>Cloud World by Priyanka</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
-* {
-  box-sizing: border-box;
-}
-
 body {
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f8;
 }
 
-/* Style the header */
+/* Header */
 header {
-  background-color: #666;
+  background-color: #0a3d62;
+  color: white;
   padding: 30px;
   text-align: center;
-  font-size: 35px;
-  color: yellow;
 }
 
-/* Create two columns/boxes that floats next to each other */
+header h1 {
+  margin: 0;
+}
+
+/* Navigation */
 nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
+  background-color: #1e3799;
+  padding: 15px;
   text-align: center;
-  color: yellow;
 }
 
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main container */
+.container {
+  padding: 20px;
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  color: #0a3d62;
+}
+
+/* Lists */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #0a3d62;
+  color: white;
+  text-align: center;
+  padding: 10px;
 }
 </style>
 </head>
+
 <body>
 
-
 <header>
-  <h2>cloud-World by Priyanka </h2>
+  <h1>Cloud World by Priyanka</h1>
+  <p>Learn • Build • Grow in DevOps & Cloud</p>
 </header>
 
-<section>
-  <nav>
+<nav>
+  <a href="https://www.linkedin.com/in/priyanka-mpatil/" target="_blank">LinkedIn Profile</a>
+</nav>
+
+<div class="container">
+
+  <div class="card">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m Priyanka, an aspiring Cloud and DevOps Engineer.
+      I am learning AWS, Linux, Docker, CI/CD, and automation tools.
+      This website is my learning journal and a motivation platform for DevOps beginners.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>DevOps Learning Agenda</h2>
     <ul>
-      <li><a href="www.linkedin.com/in/priyanka-mpatil/">LinkedIn</a></li>
+      <li>Understand Linux, Git, and Networking fundamentals</li>
+      <li>Learn AWS core services and cloud concepts</li>
+      <li>Practice Docker and containerization</li>
+      <li>Build CI/CD pipelines using Jenkins and GitHub Actions</li>
+      <li>Learn Infrastructure as Code using Terraform</li>
+      <li>Work on real-world DevOps projects</li>
     </ul>
-  </nav>
-  
-  <article>
-    <h1>Agenda</h1>
-    <p>Learn DevOps with strong foundational knowledge and practical understanding</p>
-    <p>Every small step you take today is building the career you deserve </p>
-  </article>
-</section>
+  </div>
+
+  <div class="card">
+    <h2>Motivation for DevOps Learners</h2>
+    <ul>
+      <li>Consistency matters more than speed</li>
+      <li>Learn one concept every day</li>
+      <li>Hands-on practice builds confidence</li>
+      <li>Failures are stepping stones to success</li>
+    </ul>
+  </div>
+
+</div>
 
 <footer>
-  <p>@DevOps_Learners</p>
+  <p>@DevOps_Learners | Cloud World by Priyanka</p>
 </footer>
 
 </body>
